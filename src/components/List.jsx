@@ -65,7 +65,7 @@ function List() {
       <ul>
         {array.map((item) => (
           <ListItem
-            id={item.id}
+            key={item.id}
             color={item.color}
             handleClickedId={id}
             clickedId={clickedId}

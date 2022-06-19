@@ -19,7 +19,6 @@ function ListItem(props) {
     <div className="li-parent-div">
       <li
         ref={liText}
-        key={props.id}
         style={style}
         onContextMenu={(e) => handleContextMenu(e, props.id)}
       >
