@@ -1,0 +1,39 @@
+ul{
+    width: 60%;
+    margin: 100px auto;
+    background-color: burlywood;
+    padding: 40px;
+    li{
+        text-align: center;
+    }
+}
+article{
+    border: 1px solid black;
+    background-color: white;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding-bottom: 15px;
+    min-height: 150px;
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    button{
+        min-width: 30px;
+        min-height: 20px;
+        border: none;
+        border-radius: 8px;
+        color: black;
+    }
+   button:first-child{
+    background-color: yellow;
+   }
+   button:last-child{
+    background-color: red;
+   }
+}
