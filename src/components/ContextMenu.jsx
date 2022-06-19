@@ -3,20 +3,6 @@ import React, { useEffect, useRef } from "react";
 function ContextMenu(props) {
   const menu = useRef(null);
 
-  // const handleClick = (e) => {
-  //   if (!popup.current.contains(e.target)) {
-  //     props.closePopUp();
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener("click", handleClick);
-
-  //   return function cleanUp() {
-  //     document.removeEventListener("click", handleClick);
-  //   };
-  // });
-
   const handleClick = (e) => {
     if (menu.current !== null) {
       if (!menu.current.contains(e.target)) {
