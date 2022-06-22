@@ -2,13 +2,33 @@ import React, { useState } from "react";
 import ListItem from "./ListItem";
 import "../styles/list.scss";
 import ContextMenu from "./ContextMenu";
-import DefaultArray from "../helpers/DefaultArray";
+const ListData  = [
+  {
+    id: 1,
+    color: "red",
+  },
+  {
+    id: 2,
+    color: "blue",
+  },
+  {
+    id: 3,
+    color: "yellow",
+  },
+  {
+    id: 4,
+    color: "orange",
+  },
+  {
+    id: 5,
+    color: "green",
+  },
+];
 
 function List() {
   const [id, setId] = useState(null);
-  const [contextMenu, setContextMenu] = useState({text:""});
+  const [contextMenu, setContextMenu] = useState({ text: "" });
   const [showContext, setShowContext] = useState(false);
-  const array = DefaultArray;
 
   const clickedId = (id) => {
     setId(id);
@@ -41,7 +61,7 @@ function List() {
       )}
 
       <ul>
-        {array.map((item) => (
+        {ListData.map((item) => (
           <ListItem
             key={item.id}
             color={item.color}
