@@ -23,12 +23,12 @@ function ContextMenu(props) {
 
   const style = {
     position: "absolute",
-    top: props.getY,
-    left: props.getX,
+    top: props.contextMenu.getY,
+    left: props.contextMenu.getX,
   };
   return (
     <article ref={menu} style={style}>
-      <p>{props.liText.current.textContent}</p>
+      <p>{props.contextMenu.text}</p>
       <div>
         <button onClick={(e) => props.hideContext(false, e)}>Edit</button>
         <button onClick={(e) => props.hideContext(false, e)}>Remove</button>

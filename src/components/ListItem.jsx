@@ -6,7 +6,7 @@ function ListItem(props) {
   const handleContextMenu = (e, id) => {
     e.preventDefault();
     props.clickedId(id);
-    props.contextIsShow(liText,e.clientX,e.clientY)
+    props.contextIsShow(liText.current.textContent,e.clientX,e.clientY)
   };
 
   const style = {
