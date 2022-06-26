@@ -36,9 +36,6 @@ function List() {
 
   const hideContext = (value, e) => {
     setShowContext(value);
-    if (e !== undefined) {
-      console.log(e.target.textContent);
-    }
   };
 
   const contextIsShow = (text, getX, getY) => {
